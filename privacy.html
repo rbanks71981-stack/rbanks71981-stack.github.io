@@ -23,19 +23,19 @@
 <h2>Camera mode</h2>
 <p>Camera mode films you hooping and draws the hoop and your score on the video. It has been part of the Android version since October 12, 2026 and is coming to the iPhone version. It works only when you open it; pocket play never uses the camera.</p>
 <ul>
-<li><strong>The camera picture never leaves your phone.</strong> To place the hoop, the app tracks your body in each camera frame: on Android with Google ML Kit, on iPhone with Apple's Vision framework. This runs on your phone in real time, and the camera picture and the tracking are never sent anywhere.</li>
+<li><strong>The camera picture never leaves your phone.</strong> To place the hoop, the app tracks your body in each camera frame: on Android with Google ML Kit, on iPhone with Apple's Vision framework. This runs on your phone in real time, and the camera picture and the tracking are never sent anywhere. On Android, Google ML Kit may send Google anonymous usage and performance information about the tracking feature (such as device and app details, settings and error codes), never camera images; see <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google's ML Kit data disclosure</a>.</li>
 <li><strong>Your video stays on your phone.</strong> A round's video is recorded only on your phone, in the app's own storage, and older ones are deleted automatically. It is saved to your gallery (Android) or Photos (iPhone) only if you choose to save it, and it leaves your phone only if you tap Share and pick an app to send it to.</li>
 <li><strong>No microphone.</strong> On Android the round is recorded without sound, and uHoop's own music is added to the video afterwards; the app does not ask for microphone access.</li>
 </ul>
 
 <h2>Permissions the app asks for</h2>
-<p>Each permission is asked for only when you first use the feature that needs it. Saying no to the camera, Photos, nearby-device or notification permission turns off only that feature; the rest of the game keeps working.</p>
+<p>Each permission is asked for only when you first use the feature that needs it. Saying no to the camera, Photos, storage, nearby-device or notification permission turns off only that feature; the rest of the game keeps working. Reading the motion sensors needs no permission on either phone.</p>
 <ul>
 <li><strong>Camera</strong>: only for Camera mode.</li>
 <li><strong>Photos (iPhone)</strong>: permission to add Camera mode videos to Photos, asked only when you save one. The app does not ask to see your photos.</li>
-<li><strong>Motion &amp; Fitness (iPhone)</strong>: to read the motion sensors while you play.</li>
+<li><strong>Storage (Android 8 and 9 only)</strong>: to save a Camera mode video to your gallery, asked only when you save one. Newer Android versions need no permission for this.</li>
 <li><strong>Nearby devices (Android)</strong> or <strong>Local Network (iPhone)</strong>: only for "Play together", to find phones near you. On older Android versions this may appear as a location permission; the app does not use your location for anything else.</li>
-<li><strong>Notifications</strong>: for the playing notification and the daily reminder, if you turn it on.</li>
+<li><strong>Notifications</strong>: for the daily reminder, if you turn it on, and on Android also for the notification shown while a session is playing.</li>
 </ul>
 
 <h2>Playing with friends nearby</h2>
@@ -59,7 +59,7 @@
 <h2>Your choices</h2>
 <ul>
 <li>Change your ad consent in Settings › Privacy options (where shown).</li>
-<li>Turn off the camera, Photos, Nearby devices, Local Network or notification permission at any time in your phone's settings.</li>
+<li>Turn off the camera, Photos, storage, Nearby devices, Local Network or notification permission at any time in your phone's settings.</li>
 <li>Remove the app's data from your phone at any time by clearing its storage or uninstalling it. Videos you saved to your gallery or Photos stay there until you delete them.</li>
 <li>Because we hold no personal information about you on any server, there is nothing for us to export or delete; ad information is managed by Google (see the links above).</li>
 </ul>
